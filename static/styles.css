@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #800080; /* Main purple color */
+    --secondary-color: #b969b9; /* Medium purple */
+    --accent-color: #8A2BE2; /* Blue purple */
+    --background-color: #f5f5f5; /* Light gray background */
+    --text-color: #333333; /* Dark text color */
+    --link-color: #663399; /* Darker purple for links */
+    --hover-color: #9932CC; /* Darker purple for hover effects */
+    --table-background-color: #efe0ef; /**/
+    --table-background-color-2: #efd6ef; /**/
+    --table-link-color: #592d80; /**/
+    --table-row-hover-color: #EECCEE; /**/
+    --table-row-hover-color-2: #EEC2EE; /**/
+  }
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9rem;
+    background-color: var(--background-color);
+}
+
+/* Apply a basic style to the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the table headers */
+  th {
+    padding: 12px;
+    text-align: center;
+    border-left: 1px solid var(--table-background-color);
+    border-bottom: 1px solid var(--table-background-color);
+  }
+  td {
+    padding: 12px;
+    text-align: center;
+    border-left: 1px solid var(--background-color);
+    border-bottom: 1px solid var(--background-color);
+  }
+  td.index {
+    font-weight: bold; 
+  }
+  td.description {
+    text-align: left;
+  }
+  
+  /* Style the first table header row with a different background color */
+  tr:first-child {
+    background-color: var(--primary-color); /* Change to your preferred color */
+    color: var(--background-color); /* Set the text color for better contrast */
+  }
+
+  tr:nth-child(2) {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+  
+  /* Style alternating rows for better readability, excluding the first row */
+  tr:not(:nth-child(1)):nth-child(odd) {
+    background-color: var(--table-background-color);
+  }
+  tr:not(:nth-child(2)):nth-child(even) {
+    background-color: var(--table-background-color-2);
+  }
+  
+  /* Highlight the table rows on hover */
+  tr:not(:nth-child(1)):nth-child(odd):hover {
+    background-color: var(--table-row-hover-color-2);
+  }
+  tr:not(:nth-child(2)):nth-child(even):hover {
+    background-color: var(--table-row-hover-color);
+  }
+
+  /* Style links which appear within tables */
+  table a {
+    color: var(--table-link-color);
+    text-decoration: none;
+  }
+  table a:hover {
+    color: var(--table-link-color);
+    text-decoration: underline;
+  }
+
