@@ -6,7 +6,7 @@
 (I would recommend [HTML Preview](https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode))
 
 ## Usage
-### `occupational_duties.html`
+### `occupation_duties.html`
 This page has a table of all the duties that we (as DevOps apprentices) are meant to fulfil while on placement, along with the associated KSBs.  
 Hover over a KSB to see its description. This is automatically filled from the corresponding section in `KSB.md`.
 ### `retro-diary-template.md`
